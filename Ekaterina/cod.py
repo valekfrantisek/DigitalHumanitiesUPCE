@@ -10,6 +10,7 @@ import random
 def startGame(min, max, attemtps):
     print(f"Guess the number  {min} - {max}, attempts: {attemtps}")
     guessed_number = random.randint(min, max)
+    # NOTE: když jste importovala "from random import randint", tak tohle je zbytečné, stačilo napsat jenom guessed_number = randint(min, max)
 
     while attemtps != 0:
         user_input = input("Type number: ")  # Read string from console
