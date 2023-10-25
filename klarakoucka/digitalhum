@@ -1,0 +1,15 @@
+veta = "zde je jedna věta"
+Microsoft Windows [Version 10.0.22621.2428]
+(c) Microsoft Corporation. Všechna práva vyhrazena.
+
+C:\Users\klara>git confing --global user.name klarakoucka
+git: 'confing' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+C:\Users\klara>git config --global user.email klarakoucka1@seznam.cz
+
+C:\Users\klara>
+C:\Users\klara>git config --global user.name klarakoucka
+C:\Users\klara>git config --global user.name klarakoucka
