@@ -1,0 +1,4 @@
+Toto je soubor, který obsahuje pouze nějaký úplně náhodný text.
+Je to náhoda a nebo není? Určitě ten obsah co píšu je určen tím, že jsem řekl, že to bude random.
+No, je to šumák, jde jen o načítání soubrů ;)
+Jde taky o tom, aby v tom byly nějaký háčky a čárky ěščřžýáíé.
