@@ -6,7 +6,6 @@ from urllib.parse import urljoin
 
 
 def download_images(url, output_folder='book_images'):
-    output_folder = "C:\Users\ondra\dokumenty\WebScrape"
     response = requests.get(url)
 
     if response.status_code == 200:
