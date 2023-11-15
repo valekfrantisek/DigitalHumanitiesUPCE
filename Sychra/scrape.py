@@ -20,7 +20,6 @@ def download_images(url, output_folder='book_images'):
             image_response = requests.get(image_url)
 
             if image_response.status_code == 200:
-                # Save the image to the output folder
                 with open(os.path.join(output_folder, f"image_{index + 1}.jpg"), 'wb') as img_file:
                     img_file.write(image_response.content)
                 print(f"Image {index + 1} downloaded successfully.")
@@ -30,5 +29,4 @@ def download_images(url, output_folder='book_images'):
     else:
         print("Failed to retrieve the web page. Status code:", response.status_code)
 
-# Replace 'https://books.toscrape.com/' with the URL of the website you want to scrape
 download_images('https://books.toscrape.com/')
