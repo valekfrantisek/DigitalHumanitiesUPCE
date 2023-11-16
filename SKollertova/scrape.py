@@ -30,17 +30,17 @@ print (text)
 
 for i in range(1,51):
     url = f'https://books.toscrape.com/catalogue/page-{i}.html'
-page = requests.get(url)
-text = page.text
-print (text)
+    page = requests.get(url)
+    text = page.text
+    print(url)
 
 
-web_lines = text.splitlines()
-images_url = []
-is_product = False
-for line in web_lines:
-    if '<article class="product_pod">' in line:
-        is_product = True
+    web_lines = text.splitlines()
+    images_url = []
+    is_product = False
+    for line in web_lines:
+        if '<article class="product_pod">' in line:
+    is_product = True
     if '<img src="' in line and is_product:
         start = line.find('<img src="')
         end = line.find('" alt="')
@@ -48,10 +48,10 @@ for line in web_lines:
         images_url.append(img_url)
         is_product = False
 
-print(images_url)
-print(len(images_url))
+    print(images_url)
+    print(len(images_url))
 
-for img_url in images_url:
+    for img_url in images_url:
     print(url + img_url)
 
     img_filename = img_url.split('/')[-1]
@@ -64,14 +64,14 @@ for img_url in images_url:
 
     time.sleep(2)
 
-web_lines = text.splitlines()
-images_url_et_names = {}
+    web_lines = text.splitlines()
+    images_url_et_names = {}
 
-is_product = False
+    is_product = False
 
-for i, line in enumerate(web_lines):
-    if '<article class="product_pod">' in line:
-        is_product = True
+    for i, line in enumerate(web_lines):
+        if '<article class="product_pod">' in line:
+    is_product = True
     if '<img src="' in line and is_product:
         start = line.find('<img src="')
         end = line.find('" alt="')
@@ -84,10 +84,10 @@ for i, line in enumerate(web_lines):
         images_url_et_names[i] = [img_url, img_name]
         is_product = False
 
-print('Urls and names retrieved.')
+    print('Urls and names retrieved.')
 
-for i in images_url_et_names:
-    print(i, images_url_et_names[i])
+    for i in images_url_et_names:
+        print(i, images_url_et_names[i])
     img_url = images_url_et_names[i][0]
     img_name = images_url_et_names[i][1]
 
