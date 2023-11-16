@@ -7,33 +7,36 @@ ROOT_PATH = os.getcwd()
 SCRAPE_PATH = 'C:/Users/NTB/Downloads'
 
 url = "https://books.toscrape.com/"
-
 page = requests.get(url)
 text = page.text
-
 print(text)
 
+
 for i in range(1,51):
-     url = f"https://books.toscrape.com/catalogue/page-{i}.html"
+    url = f"https://books.toscrape.com/catalogue/page-{i}.html"
+    page = requests.get(url)
+    text = page.text
+    print(url)
 
-web_lines = text.splitlines() 
+    web_lines = text.splitlines() 
 
-images_url = []
+    images_url = []
 
-is_product = False
+    is_product = False
+
 
 for line in web_lines:
     if '<article class="product_pod">' in line:
-        is_product = True
+            is_product = True
     if '<img src="' in line and is_product:
-        start = line.find('<img src="')
-        end = line.find('" alt="')
-        img_url = line[start+10:end]
-        images_url.append(img_url)
-        is_product = False
+            start = line.find('<img src="')
+            end = line.find('" alt="')
+            img_url = line[start+10:end]
+            images_url.append(img_url)
+            is_product = False
         
-print(images_url)
-print(len(images_url))
+    print(images_url)
+    print(len(images_url))
 
 for img_url in images_url:
     print(url + img_url)
@@ -43,16 +46,16 @@ for img_url in images_url:
     response = requests.get(url + img_url)
     
     with open(os.path.join(SCRAPE_PATH, img_filename), 'wb') as out_file:
-            out_file.write(response.content)
-            print('\t', img_filename, 'downloaded')
+        out_file.write(response.content)
+        print('\t', img_filename, 'downloaded')
             
     time.sleep(1)
 
-    web_lines = text.splitlines() # web_lines = text.split('\n')
+    web_lines = text.splitlines() 
 
-images_url_et_names = {}
+    images_url_et_names = {}
 
-is_product = False
+    is_product = False
 
 for i, line in enumerate(web_lines):
     if '<article class="product_pod">' in line:
@@ -69,7 +72,7 @@ for i, line in enumerate(web_lines):
         images_url_et_names[i] = [img_url, img_name]
         is_product = False
         
-print('Urls and names retrieved.')
+    print('Urls and names retrieved.')
         
 for i in images_url_et_names:
     print(i, images_url_et_names[i])
