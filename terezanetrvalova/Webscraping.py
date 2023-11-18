@@ -7,10 +7,6 @@ from nltk import word_tokenize
 ROOT_PATH = os.getcwd()
 SCRAPE_PATH = 'C:/Users/NTB/Downloads'
 
-url = "https://books.toscrape.com/"
-page = requests.get(url)
-text = page.text
-print(text) 
 
 
 for i in range(1,51):
