@@ -1,0 +1,104 @@
+[
+    {
+        "otazka": "Která ze složek duše je představována jako 'černý kůň'?",
+        "odpovedi": ["a) Myšlení", "b) Žádostivost", "c) Vůle"],
+        "platne_odpovedi": ["a", "b", "c"],
+        "spravna_odpoved": "c"
+    },
+    {
+        "otazka": "Jak pojmenováváme myšlenku, že se každý člověk rodí neposkvrněn a až během života vytváří sám sebe?",
+        "odpovedi": ["a) Čistá zeď", "b) Tabula rása", "c) Vzkříšení"],
+        "platne_odpovedi": ["a", "b", "c"],
+        "spravna_odpoved": "b"
+    },
+    {
+        "otazka": "Jak se nazývá nauka o lidském poznání?",
+        "odpovedi": ["a) Noetika", "b) Ornitologie", "c) Kosmologie"],
+        "platne_odpovedi": ["a", "b", "c"],
+        "spravna_odpoved": "a"
+    },
+    {
+        "otazka": "Kdo jako první použil slovo filosofie a nazval se filosofem?",
+        "odpovedi": ["a) Sokratés", "b) Platón", "c) Pythagoras"],
+        "platne_odpovedi": ["a", "b", "c"],
+        "spravna_odpoved": "c"
+    },
+    {
+        "otazka": "Jak nazýváme nauku o lidském bytí?",
+        "odpovedi": ["a) Noetika", "b) Ontologie", "c) Filosofie"],
+        "platne_odpovedi": ["a", "b", "c"],
+        "spravna_odpoved": "b"
+    },
+    {
+        "otazka": "Jak se nazývá chápání osudu jako neovlivnitelného celku?",
+        "odpovedi": ["a) Komunismus", "b) Stoicismus", "c) Determinismus"],
+        "platne_odpovedi": ["a", "b", "c"],
+        "spravna_odpoved": "c"
+    },
+    {
+        "otazka": "Která z možností je nejlepším překladem řeckého slova 'kosmos'?",
+        "odpovedi": ["a) Vesmír", "b) Nekonečno", "c) Lrásný celek"],
+        "platne_odpovedi": ["a", "b", "c"],
+        "spravna_odpoved": "c"
+    },
+    {
+        "otazka": "Které z uvedených nepatří do základních 3 mocí státu?",
+        "odpovedi": ["a) Bohatství", "b) Univerzita", "c) Vojsko"],
+        "platne_odpovedi": ["a", "b", "c"],
+        "spravna_odpoved": "a"
+    },
+    {
+        "otazka": "Kdo je jediný, kdo skutečně žije dobrý život?",
+        "odpovedi": ["a) Věřící", "b) Filosof", "c) Otrok"],
+        "platne_odpovedi": ["a", "b", "c"],
+        "spravna_odpoved": "b"
+    },
+    {
+        "otazka": "Čím se vyměřuje spravedlnost lži?",
+        "odpovedi": ["a) Dobrem", "b) Záměrem", "c) Užitečností"],
+        "platne_odpovedi": ["a", "b", "c"],
+        "spravna_odpoved": "a"
+    },
+    {
+        "otazka": "Které z tvrzení o Idejích není pravdivé?",
+        "odpovedi": ["a) Jsou netělesné a neměnné", "b) Jsou mimo čas a prostor", "c) Neovlivňují neživé věci"],
+        "platne_odpovedi": ["a", "b", "c"],
+        "spravna_odpoved": "c"
+    },
+    {
+        "otazka": "Pamatujeme si po narození ideje?",
+        "odpovedi": ["a) Ano", "b) Ne", "c) Jen někteří"],
+        "platne_odpovedi": ["a", "b", "c"],
+        "spravna_odpoved": "b"
+    },
+    {
+        "otazka": "Jak jinak nazýváme složku duše ctižádostivost?",
+        "odpovedi": ["a) Bílý kůň", "b) Černý kůň", "c) Vozataj"],
+        "platne_odpovedi": ["a", "b", "c"],
+        "spravna_odpoved": "b"
+    },
+    {
+        "otazka": "Kde se tato složka duše (ctižádostivost) nachází?",
+        "odpovedi": ["a) Hlava", "b) Hrudník", "c) Podbřišek"],
+        "platne_odpovedi": ["a", "b", "c"],
+        "spravna_odpoved": "c"
+    },
+    {
+        "otazka": "Celkem kolik složek duše rozpoznáváme?",
+        "odpovedi": ["a) 1", "b) 2", "c) 3"],
+        "platne_odpovedi": ["a", "b", "c"],
+        "spravna_odpoved": "c"
+    },
+    {
+        "otazka": "Jak se řecky řekne 'duše'?",
+        "odpovedi": ["a) Psyché", "b) Soma", "c) Logos"],
+        "platne_odpovedi": ["a", "b", "c"],
+        "spravna_odpoved": "a"
+    },
+    {
+        "otazka": "Z čeho se skládá Platónský trojúhelník?",
+        "odpovedi": ["a) Duše, tělo, srdce", "b) Duše, tělo, mysl", "c) Duše, mysl, srdce"],
+        "platne_odpovedi": ["a", "b", "c"],
+        "spravna_odpoved": "b"
+    }
+]
